@@ -81,6 +81,10 @@ nav {
 .catagory-cardcontainer {
   justify-content: space-around;
   display: flex;
+  width: 100%;
+}
+.catageries {
+  margin: 20px 0;
 }
 .catageory-card {
   display: flex;
@@ -93,4 +97,34 @@ nav {
   background: linear-gradient(90deg, #ec4899, #f43f5e);
   padding: 20px;
   border-radius: 10px;
+}
+.showes-section {
+  background-color: rgb(210, 196, 196);
+  padding: 50px 0;
+}
+.show-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.show-card {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.show-card img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-price {
+  display: block;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.show-card .panda-btn {
+  background: #ec4899;
 }
