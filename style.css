@@ -38,7 +38,7 @@ nav {
 }
 .nav-items li a {
   text-decoration: none;
-  color: green;
+  color: rgb(206, 94, 141);
   font-weight: bold;
   font-size: 18px;
 }
@@ -141,8 +141,20 @@ nav {
   border-radius: 15px;
   text-align: center;
   padding: 20px;
-  box-shadow:  5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, -28px -14px 7px -8px rgba(0,0,0,0.07); 
-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, -28px -14px 7px -8px rgba(0,0,0,0.07);;
+  box-shadow:
+    5px 5px 0px 0px #289fed,
+    10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff,
+    20px 20px 0px 0px #cae6ff,
+    25px 25px 0px 0px #e1eeff,
+    -28px -14px 7px -8px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    5px 5px 0px 0px #289fed,
+    10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff,
+    20px 20px 0px 0px #cae6ff,
+    25px 25px 0px 0px #e1eeff,
+    -28px -14px 7px -8px rgba(0, 0, 0, 0.07);
 }
 .bag-container {
   display: flex;
@@ -199,4 +211,31 @@ box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0p
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.product-li {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  list-style: none;
+  background-color: yellowgreen;
+  width: 100px;
+  color: black;
+  border-radius: 0 0 15px 15px;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+}
+.dropdown li {
+  margin: 5px 0;
+
+}
+.product-li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
